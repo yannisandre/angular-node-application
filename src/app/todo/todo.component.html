@@ -1,0 +1,6 @@
+<button (click)="onClick()">Fetch Todos</button>
+<ul>
+  <li *ngFor="let todo of todos$ | async">
+    {{ todo.title }}
+  </li>
+</ul>
